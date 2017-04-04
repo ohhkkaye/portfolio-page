@@ -1,0 +1,206 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+<html>
+<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav nav-pills">
+          <li>
+          	<a class="page-scroll" href="#page-top">Home</a>
+          </li>
+          <li>
+          	<a class="page-scroll" href="#about-me">About Me</a>
+          </li>
+          <li>
+          	<a class="page-scroll" href="/portfolio">Portfolio</a>
+          </li>
+          <li>
+          	<a class="page-scroll" href="#contact">Contact</a>
+          </li>
+      	</ul>
+      </div>
+  </div>
+ </nav>
+
+	<!-- Homepage -->
+	<section id="main-head" class='main-header'>
+		<div class="container">
+			<div class="background">
+				</div>
+				<div class="name">
+					<center>
+            <h1>Hi! My name is Kaye Evangelista</h1>
+            <br><h2> 
+  <div class="typewrite" data-period="2000" data-type='[ "Hi!", "I am a web developer.", "I love design."]'>
+    <span class="wrap"></span>
+  </div>
+</h2></center>
+			</div>
+
+					<center>
+
+
+
+
+          <!--   <div id="subtitle">
+						
+					<p><h3>design</h3> &nbsp &nbsp &nbsp &nbsp <h3>{code}</h3> &nbsp &nbsp &nbsp &nbsp<h3>photograph</h3></p>
+					</div> --></center>
+			
+			
+		</div>
+	</section>
+
+	<!-- About Me -->
+    <section id="about-me" class="me-section">
+        <div class="container">
+        	<br>
+        	<br>
+        	<br>
+			<br>
+
+			<div id="me-info">
+	                	<h3>About Me</h3> 
+	                
+
+	                	<p>Self-taught web and software developer</p>
+
+			            <p>My name is Kathleen Evangelista but I do go by Kaye for short. I am a graduate of George Mason University. Although I graduated with a music degree, I took some time to learn web & software development.</p>
+
+			            <p>Besides web development and design, I dabble in photography.</p>
+						</div>
+
+						<div id="me-skills">
+							
+							<h3> Skillset </h3>
+              <p>&#8594;C#
+                <br>&#8594;ASP.NET
+                <br>&#8594;git
+                <br>&#8594;Django
+							<br>&#8594;HTML
+								<br>&#8594;CSS3 <br>&#8594;BootStrap <br>&#8594;Python <br>&#8594;Java
+							<br>&#8594;Photoshop<br>&#8594;Lightroom<br>&#8594;Illustrator</p>
+							</p>
+						</div>
+						<div id="me-picture">
+							<img src="https://c5.staticflickr.com/2/1447/24403382796_7ab1507355_b.jpg" alt="CA-58">
+						</div>
+						<!-- <div id="skills-pics">
+							<img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/adobe_zpskpwwxumj.jpg">
+							<img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/computer_zpsteo38dqq.jpg">
+							<img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/camera_zpsxxjfvvbo.jpg">
+							<img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/code2_zpsjsxtckhi.jpg">
+							
+						</div> -->
+
+
+							
+
+
+						
+
+        </div>
+    </section>
+
+
+
+   <!--<section id="projects" class="projects-section">
+    	<div class="container">
+         <h3>Projects</h3>
+         	
+         	<script type="text/javascript">
+            function showImage(smSrc, lgSrc) {
+                document.getElementById('largeImg').src = smSrc;
+                showLargeImagePanel();
+                unselectAll();
+                setTimeout(function() {
+                    document.getElementById('largeImg').src = lgSrc;
+                }, 1)
+            }
+            function showLargeImagePanel() {
+                document.getElementById('largeImgPanel').style.display = 'block';
+            }
+            function unselectAll() {
+                if(document.selection)
+                    document.selection.empty();
+                if(window.getSelection)
+                    window.getSelection().removeAllRanges();
+            }
+        </script>
+
+        <style type="text/css">
+            #largeImgPanel {
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 100;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(100,100,100, 0.5);
+            }
+        </style>
+    </head>
+
+    <body>
+    	<br>
+    	<br>
+        <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/doctorwb-1_zpsymx8zahw.jpg" style="cursor:pointer"
+             onclick="showImage(this.src, 'http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-06-17%20at%2011.54.25%20AM_zpsb2ooym2w.png');" /> &nbsp &nbsp &nbsp
+        <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/pianowb-1_zpstdmvyrnr.jpg" style="cursor:pointer"
+             onclick="showImage(this.src, 'http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-06-17%20at%2011.52.38%20AM_zpssfgvjofi.png');" /> &nbsp &nbsp &nbsp
+        <a href="https://github.com/ohhkkaye/GetVitals"><img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/code2_zpsjsxtckhi.jpg" width="200px" height="200px"
+            /></a> &nbsp &nbsp &nbsp
+
+            <a data-flickr-embed="true"  href="/photoPage/photos.html" title="ARYA-SHADIE-16"><img src="https://c4.staticflickr.com/1/755/21447365995_1d134ca61a_b.jpg" width="200" height="200" alt="ARYA-SHADIE-16"></a>
+            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/ohkayekaye/21447365995/in/dateposted-public/" title="ARYA-SHADIE-16"><img src="https://c4.staticflickr.com/1/755/21447365995_1d134ca61a_b.jpg" width="200" height="200" alt="ARYA-SHADIE-16"></a> 
+
+        <div id="largeImgPanel" onclick="this.style.display='none'">
+            <img id="largeImg"
+                 style="height:100%; margin:0; padding:0;" />
+
+
+
+        </div>
+    </body>
+              
+        </div>
+    </section>-->
+
+<section id="contact" class="contact-section">
+	<div class="container">
+	
+
+			<div class="contactme">
+				<a href="mailto:EvangelistaKathleen@gmail.com?Subject=Hello%20again" target="_top"><img src="http://iosicongallery.com/img/512/gmail-2014.png"></a> &nbsp &nbsp &nbsp &nbsp
+				<a href="https://www.linkedin.com/in/k-evangelista"><img src="http://www.coseec.com/img/cms/images/iconlinkedin.jpg"></a>&nbsp &nbsp &nbsp &nbsp
+				<a href="https://github.com/ohhkkaye"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png"></a> &nbsp &nbsp &nbsp &nbsp
+        <a href="https://www.flickr.com/photos/ohkayekaye/"><img src="http://www.nptechforgood.com/wp-content/uploads/2010/06/flickr-dots-chiclet.png"></a>
+			</div>
+
+		
+	</div>
+</section>
+
+</body>
+</body>
+</html>
+
+{% endblock content %}

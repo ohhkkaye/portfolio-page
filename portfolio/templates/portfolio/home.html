@@ -1,0 +1,426 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<head>
+<title>K. Evangelista Portfolio </title>
+
+<head>
+
+  <!--jquery-->
+  
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+
+<!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+  
+  <!-- Custom CSS -->
+
+  <link rel='stylesheet' href="{% static 'css/portfolio.css' %}">
+<!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery-easing-min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/gruntfile.js"></script>
+
+        <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Anton|Shadows+Into+Light|Dancing+Script|Lobster+Two|Domine|PT+Serif|Fjalla+One|Abril+Fatface|Ranga|Playfair+Display|Cinzel|Marck+Script|Alex+Brush|Bad+Script|Italianno|Rouge+Script|Ruthie|Euphoria+Script|Stalemate' rel='stylesheet' type='text/css'>
+
+    <link href='https://fonts.googleapis.com/css?family=Handlee|Crafty+Girls|Annie+Use+Your+Telescope|Montez|Give+You+Glory|Calligraffitti|Vidaloka|Cantata+One|Alice|Marcellus' rel='stylesheet' type='text/css'>
+<!-- ekko-lightbox-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.css"></script>
+
+
+<style>
+body {
+    padding: 30px 0px;
+}
+
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      
+      <a class="nav-item nav-link" href="/">Back</a>
+      
+    </div>
+  </div>
+</nav>
+
+<!-- ekko-lightbox-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.js.map"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css.map"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js.map"></script>
+
+
+
+<section class ="icons">
+ <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#gsc-container">
+                    <img class="img-responsive" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/clip-gsc_zpszzusiusj.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#city-xcape">
+                    <img class="img-responsive" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/cityxcape-clip_zpsl10htc4e.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#mealquest">
+                    <img class="img-responsive" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/clip-mealquest_zpshalb4rzx.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/clip-piano_zpslwekknpu.jpg" alt="">
+                </a>
+            </div>
+
+          
+        </div>  
+        </div>
+      </section>
+
+
+
+<!-- GSC WEB -->
+        <section id="gsc-container">
+          <div id="gsc-title">
+          General Systems Corporation Website Design
+
+          <center><img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-laptop_zps0hw3omaz.jpg"/>
+          </center>
+</section>
+          
+          <section id="gsc-container-2" class="gsc-container-2">
+          <div id="gsc-info">
+            
+
+            <h3>Info</h3>
+            Kaye was asked to revamp the company website as it was last redesigned in the 80s.
+            <br>
+            <br>
+            <h3>Design</h3>
+            The site was created on Squarespace as the platfrom. The homepage image was created with Adobe Photoshop and Photoshop Illustrator. The purpose of this website is an informational site for new potential clients.
+            <br>
+            Link here <a href="http://www.generalsystems.com">General Systems</a>
+
+            <br>
+            <br>
+
+
+
+
+
+<div class="row">
+    <div class="offset-md-2 col-md-8">
+        <div class="row">
+            <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-4_zpshjnmtyab.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-4_zpshjnmtyab.jpg" class="img-fluid">
+            </a>
+            <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-3_zpsvcfh1r9r.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-3_zpsvcfh1r9r.jpg" class="img-fluid">
+            </a>
+            <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-5_zpsdjbwf6za.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/gsc-5_zpsdjbwf6za.jpg" class="img-fluid">
+            </a>
+        </div>
+        <!-- <div class="row">
+            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+            </a>
+            <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+            </a>
+        </div>  -->
+    </div>
+</div>
+</section>
+
+
+
+
+
+<!-- cityXcape-->
+        <section id="city-xcape">
+          <div id="city-title">
+          City Xcape Landing Page
+
+          </div>
+</section>
+          
+          <section id="city-container-2">
+          <div id="city-info">
+            
+
+            <h3>Info</h3>
+            Kaye was asked by a colleague to create a basic landing page with existing graphics and logo. 
+            <br>
+            <br>
+            <h3>Design</h3>
+            This landing page was requested to have three sections with a scrolling page. The landing page has three main sections. This was created with given graphics such as the icons and logo, and the concept was put together by Kaye in Adobe Photoshop.
+            <br>
+            <br>
+</div>
+            <center>
+              <div id="city-image">
+            <br>
+              <div class="w3-content w3-display-container">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full-11_zpsjtw1spjw.jpg" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full-12_zpstyeehjgw.jpg" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full13_zpstg3p1sys.jpg" style="width:100%">
+              </div>
+
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              
+
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+            </div>
+          </center>
+        
+
+
+
+</section>
+
+
+
+
+
+  <!-- Meal Quest -->
+    <section id= "mealquest" class="mealquest">
+   
+          <div id="mealquest-title">
+          Mobile Concept Design
+</div>
+ 
+    </section>
+      <section id="mealquest-2">
+          <div id="mealquest-info">
+            <h3>Info</h3>
+            Kaye designed a basic design for a mobile app. The concept of the app is to request for food trucks in the nearby area.
+            <br>
+            <br>
+            <h3>Design</h3>
+            The design was created in Adobe Photoshop and Illustrator with red, white, and black as the theme colors. 
+            <br>
+
+          </div>
+
+    
+
+
+<div class="row">
+    <div class="offset-md-2 col-md-8">
+        <div class="row">
+          <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest3_zpsznn2xp58.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest3_zpsznn2xp58.jpg" class="img-fluid">
+            </a>
+            <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest2_zpsibltlsaf.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest2_zpsibltlsaf.jpg" class="img-fluid">
+            </a>
+            <a href="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest1_zpsmgx7smx1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/mealquest1_zpsmgx7smx1.jpg" class="img-fluid">
+            </a>
+            
+        </div>
+
+    </div>
+</div><!-- 
+<li class="left1">
+        <img src="">
+      </li>
+      <li class="active">
+        <img src="">
+      </li>
+      <li class="right1">
+        <img src="">
+      </li> -->
+
+     </section>
+
+
+
+      <!-- Basic Web Design -->
+        <section class="piano-studio" id="piano-studio">
+          <div id="piano-studio-div">
+          Piano Studio
+        </div>
+        </section>
+        <!-- <section class="piano-studio-2" id="piano-studio-2">
+            <center>
+              <div id="piano-studio-img">
+            <br>
+              
+              <div class="w3-content w3-display-container">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full-11_zpsjtw1spjw.jpg" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full-12_zpstyeehjgw.jpg" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/xcape-full13_zpstg3p1sys.jpg" style="width:100%">
+              </div>
+
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              
+
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+            </div>
+          </center>
+        </section> -->
+
+          <section id="piano-studio-2">
+          <div id="piano-studio-info">
+            
+
+            <h3>Info</h3>
+            This was a brief design project created as a mock-up for a basic music teacher website.
+            <br>
+            <br>
+            <h3>Design</h3>
+            The design is written in HTML, CSS, Bootstrap.
+            <br>
+            <br>
+</div>
+            
+              <div id="piano-studio-img">
+
+              <div class="w3-content w3-display-container">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-05-13%20at%2012.21.08%20PM_zpsmw9haljt.png" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-06-17%20at%2011.53.23%20AM_zpsrblxhuyl.png" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-06-17%20at%2011.53.32%20AM_zps6h3xgfzx.png" style="width:100%">
+                <img class="mySlides" src="http://i1244.photobucket.com/albums/gg567/ohhkkaye/Screen%20Shot%202016-06-17%20at%2011.53.12%20AM_zpsmemotx1j.png" style="width:100%">
+                
+
+                <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+              
+
+              <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+              </script>
+            </div>
+
+        </section>
+
+<script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});</script>
+
+
+
+
+
+
+</body>
+</html>

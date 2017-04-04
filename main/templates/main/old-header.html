@@ -1,0 +1,196 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang='en'>
+
+<head> 
+	<title>K. Evangelista</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+		<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
+		<script type="text/javascript" src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
+		<link rel='stylesheet' href="{% static 'css/header.css' %}">
+    <link rel='stylesheet' href="{% static 'css/smooth-scroll.css' %}">
+
+    <!-- scrolling -->
+    <script type="text/javascript" src="static/js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="static/js/Jquery.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="static/js/jquery-easing-min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+</head>
+
+<header>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <ul class="nav nav-pills">
+                <li class="hidden">
+                    <a class=
+
+			  	<li role="presentation"><a onclick="scrollWin()">Home</a></li>
+			  	<li role="presentation"><a onclick="scroll2()">About Me</a></li>
+			  	<li role="presentation"><a onclick="scroll3()">Projects</a></li>
+			  	<li role="presentation"><a href="#">Contact</a></li>
+			</ul>
+  		</div>
+	</nav>
+
+
+   <script>
+    function scrollWin() {
+        window.scrollTo(0, 30); //x and y
+    }
+    function scroll2() {
+        window.scrollTo(0, 1000); //x and y
+    }
+    function scroll3() {
+        window.scrollTo(0, 3000); //x and y
+    }
+    function scroll4() {
+        window.scrollTo(0, 0); //x and y
+    }
+   </script>
+
+
+</header>
+
+	<div class="block-content">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% extends 'main/header.html' %}
+
+{% block content %}
+
+<div class='main-header'>
+    <h1> Kaye Evangelista </h1>
+    <div id="button1">
+        <a class="button1" href="#second"><img class="image-1" src="https://media2.giphy.com/media/3o8doNAGKZXsrsgzW8/200_s.gif"></a><a class="button1" href="#second"><img src="https://media2.giphy.com/media/3o8doNAGKZXsrsgzW8/200_s.gif"></a><a class="button1" href="#second"><img src="https://media2.giphy.com/media/3o8doNAGKZXsrsgzW8/200_s.gif"></a><a class="button1" href="#second"><img src="https://media2.giphy.com/media/3o8doNAGKZXsrsgzW8/200_s.gif"></a>
+    </div>
+    <p>text here</p>
+    <br>
+    <br>
+</div>
+
+
+<body>
+
+<section id="first" class="first-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+<p>TEXT GOES HERE</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="second" class="second-section">
+    <img src="https://media2.giphy.com/media/3o8doNAGKZXsrsgzW8/200_s.gif">
+    <br><button><a onclick="scroll4()">Click me to go back up!</a></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+    <p>TEXT GOES HERE</p>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<img src="http://www.desicomments.com/dcimg/02/270982_original.jpg">
+<br><button><a onclick="scroll4()">Click me to go back up!</a></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="http://www.imagefully.com/wp-content/uploads/2015/07/The-Cute-Yellow-Pikachu-Picture.jpg">
+<button><a onclick="scroll4()">Click me to go back up!</a></button>
+
+
+</body>
+
+
+{% endblock content %}

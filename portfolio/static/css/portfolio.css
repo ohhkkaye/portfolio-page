@@ -1,0 +1,947 @@
+/* change navbar background */
+.nav-item .nav-link a:hover{
+color: #3D3D3D;
+}
+
+
+nav.navbar {
+  background: transparent;
+}
+/* change navbar-brand color */
+.navbar a.navbar-brand {
+  color: white;
+}
+/* change navbar-brand color on hover */
+.navbar a.navbar-brand:hover {
+  color: green;
+}
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: white;
+}
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-light span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+  border-color: white;
+}
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+  nav.navbar {
+    background: #3D3D3D;
+  }
+}
+
+/*piano studio*/
+.piano-studio {
+  background-color: #3D3D3D;
+  font-size: 2vw;
+  height: 100vh;
+  font-family: "Fjalla One", cursive;
+}
+
+.piano-studio-2 {
+  background-color: #3D3D3D;
+  font-size: 2vw;
+  height: 100vh;
+  font-family: "Fjalla One", cursive;
+}
+
+
+#piano-studio-div {
+  font-family: "Fjalla One", cursive;
+  font-size: 10vh;
+  text-align: center;
+  color: white;
+  padding: 20%;
+  height: 100vh;
+}
+#piano-studio-img{
+  width: 70%;
+  background-color: #3D3D3D;
+  float: right;
+  padding: 2%;
+}
+
+#piano-studio-img img {
+  float: center;
+  width: 90%;
+  background-color: #3D3D3D;
+}
+
+#city-info h3 {
+  font-family: "Abril Fatface", serif;
+  color: #C0E4FF;
+}
+#piano-studio-info{
+    float: left;
+  width: 30%;
+   font-size: 2vw;
+  font-family: "Fjalla One", cursive;
+  padding: 1%;
+  background-color: #3D3D3D;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/*  lightbox */
+body {
+    margin:0; 
+    padding:0; 
+    background:#efefef;
+    text-align:center; /* used to center div in IE */
+}
+#wrapper {
+    width:600px; 
+    margin:0 auto; /*centers the div horizontally in all browsers (except IE)*/
+    background:#fff; 
+    text-align:left; /*resets text alignment from body tag */
+    border:1px solid #ccc;
+    border-top:none; 
+    padding:25px; 
+    /*Let's add some CSS3 styles, these will degrade gracefully in older browser and IE*/
+    border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px; 
+    box-shadow:0 0 5px #ccc;
+    -moz-box-shadow:0 0 5px #ccc;
+    -webkit-box-shadow:0 0 5px #ccc;
+}
+#lightbox {
+    position:fixed; /* keeps the lightbox window in the current viewport */
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:url(overlay.png) repeat; 
+    text-align:center;
+}
+#lightbox img {
+    box-shadow:0 0 25px #111;
+    -webkit-box-shadow:0 0 25px #111;
+    -moz-box-shadow:0 0 25px #111;
+    max-width:940px;
+}
+#lightbox p {
+    text-align:right; 
+    color:#fff; 
+    margin-right:20px; 
+    font-size:12px; 
+}
+/*end of lightbox */
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+/*end lightbox css*/
+
+
+
+body:after {
+  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  display: none;
+}
+
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+
+  /* Image border */
+  border: 4px solid white;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(../images/loading.gif) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;d
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/close.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+
+.image-source-link {
+  color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+/* rotator */
+
+
+.wrap {
+  height: 100%;
+  width: 100%;
+ float: left;
+}
+
+.wrap ul {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+}
+
+.wrap ul li {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.6s ease-in;
+  opacity: 0;
+  margin-top: 10px;
+}
+
+.wrap ul li img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.wrap li.active {
+  z-index: 999;
+  opacity: 1;
+}
+
+.wrap li.left2 {
+  transform: perspective(600px) translateX(-160%) rotateY(-40deg) scale(0.5);
+  opacity: 1;
+}
+
+.wrap li.left1 {
+  transform: translateX(-102%) scale(0.8);
+  opacity: 1;
+}
+
+.wrap li.right1 {
+  transform: translateX(102%) scale(0.8);
+  opacity: 1;
+}
+
+.wrap li.right2 {
+  transform: perspective(600px) translateX(160%) rotateY(40deg) scale(0.5);
+  opacity: 1;
+}
+h1 { color:#fff; text-align:center; margin-bottom:30px;}
+
+/* mealquest container */
+
+
+.mealquest {
+  background-color: #000000;
+  color: #C0E4FF;
+  height: 100vh;
+}
+
+
+
+.mealquest-container {
+  background-color: #000000;
+  font-size: 2vw;
+  height: 100vh;
+  font-family: "Fjalla One", cursive;
+}
+
+#mealquest-title {
+  font-family: "Fjalla One", cursive;
+  font-size: 10vh;
+  text-align: center;
+  color: white;
+  padding: 20%;
+
+}
+
+
+#mealquest-2{
+  background-color: #000000;
+  height: 100vh;
+}
+#mealquest-info h3 {
+  font-family: "Abril Fatface", serif;
+  color: #C0E4FF;
+}
+
+#mealquest-image {
+  float: left;
+  width: 60%;
+  height: auto;
+}
+
+#mealquest-img img {
+  float: center;
+  width: 30%;
+  background-color: #3D3D3D;
+}
+
+.wrap {
+  float: left;
+  padding-left: 17%;
+  width: 50%;
+}
+
+.wrap img {
+  width: 50%;
+}
+
+#mealquest-info {
+  float: right;
+  width: 40%;
+  height: auto; font-size: 2vw;
+  font-family: "Fjalla One", cursive;
+  padding: 1%;
+  color: white;
+}
+
+
+
+
+.icons {
+  padding: 10%;
+  height: 100vh;
+  background-color: #3D3D3D;
+}
+.container {
+  height: 100vh;
+}
+/* GSC-Web container */
+.gsc-web {
+  background-color: #000000;
+  color: #C0E4FF;
+  height: 100vh;
+}
+
+#gsc-container {
+  background-color: #000000;
+  font-size: 2vw;
+  height: 100vh;
+  font-family: "Fjalla One", cursive;
+}
+
+#gsc-container img {
+  width: 60%;
+}
+#gsc-title {
+  font-family: "Fjalla One", cursive;
+  font-size: 7vh;
+  text-align: center;
+  color: white;
+  padding: 10%;
+  height: 100vh;
+
+
+}
+
+#gsc-info h3 {
+  font-family: "Abril Fatface", serif;
+  color: #C0E4FF;
+}
+
+#gsc-laptop {
+  width: 50%;
+  height: auto;
+  height: 100%;
+}
+
+#gsc-laptop img {
+  float: center;
+  width: 100%;
+  background-color: #3D3D3D;
+}
+
+#gsc-info {
+  float: left;
+  height: 100vh;
+   font-size: 2vw;
+  font-family: "Fjalla One", cursive;
+  padding: 1%;
+  background-color: black;
+  color: white;
+
+}
+
+
+#gsc-container-2 {
+  height: 100vh;
+  width: auto;
+}
+
+
+#gsc-container-2 a {
+  color: #C0E4FF;
+}
+
+
+
+/* City container */
+#city-xcape {
+  background-color: #3D3D3D;
+  color: white;
+  height: 100vh;
+}
+
+#city-container {
+  background-color: #3D3D3D;
+  font-size: 2vw;
+  height: 100vh;
+  font-family: "Fjalla One", cursive;
+}
+
+#city-container img {
+  width: 80%;
+}
+#city-title {
+  font-family: "Fjalla One", cursive;
+  font-size: 10vh;
+  text-align: center;
+  color: white;
+  padding: 20%;
+  height: 100vh;
+}
+
+#city-info h3 {
+  font-family: "Abril Fatface", serif;
+  color: #C0E4FF;
+}
+
+#city-image {
+  width: 70%;
+  background-color: #3D3D3D;
+  float: right;
+  padding: 2%;
+}
+
+#city-image img {
+  float: center;
+  width: 90%;
+  background-color: #3D3D3D;
+
+}
+
+#city-info {
+  float: left;
+  width: 30%;
+   font-size: 2vw;
+  font-family: "Fjalla One", cursive;
+  padding: 1%;
+  background-color: #3D3D3D;
+  color: white;
+
+}
+
+#city-info img {
+  width: 20%;
+  height: auto;
+
+}
+
+#city-container-2 {
+  height: 100vh;
+  width: auto;
+  background-color: #3D3D3D;
+}
+
+
+#city-container-2 a {
+  color: #C0E4FF;
+}
+
+
+
+.name {
+  position: relative;
+  margin-top: 10%;
+}
+.city-info h3{
+  font-family: "Abril Fatface", serif;
+  font-size: 10vw;
+  color: black;
+  text-align: center;
+  padding: 1%;
+}
+
+.main-header {
+  /*background: -webkit-linear-gradient(#02477A, black); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(#02477A, black); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#02477A, black); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#02477A, black); /* Standard syntax */
+  background: #3D3D3D;
+
+}
+
+
+.icons {
+  height: 100%;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+
+}
+
+#subtitle {
+  margin-top: 0;
+  position: relative;
+}
+
+#subtitle span {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+
+#subtitle h3 {
+  font-family: "Vidaloka", cursive;
+  color: #C0E4FF;
+  font-size: 4vw;
+  display: inline;
+}
+
+
+.contact-section {
+  color: #4cb3ff;
+  font-family: "Anton", cursive;
+  background: #3D3D3D;
+}
+.contactme img{
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contactme {
+  margin: 0 auto;
+}
+
+body {
+	font-family: "Arial", serif;
+	/*padding-top: 70px;*/
+  background: #3D3D3D;
+  height: 100%;
+  }
+
+
+#projects {
+  height: 100vh;
+  color: white;
+    background: #3D3D3D;
+}
+/*ABOUT ME section*/
+
+#me-title {
+  font-size: 4vw;
+  font-family: "Anton", cursive;
+  text-align: right;
+}
+
+#me-info {
+  font-family: "Fjalla One", serif;
+  font-size: 2vw;
+  border: 2px;
+  float: left;
+  text-align: right;
+  width: 40%;    
+}
+
+.me-section {
+    background:#3D3D3D;
+  width: 100%;
+  color: #C0E4FF;
+}
+
+.me-section h3 {
+  font-family: "Anton";
+  font-size: 5vw;
+  color: white;
+}
+
+#skills-pics img{
+  border-radius: 20%;
+  width: 15%;
+}
+
+#skills-pics {
+  float: right;
+  display: block;
+}
+
+#me-skills {
+  font-family: "Fjalla One", serif;
+  font-size: 2vw;
+  float: right;
+  width: 55%;
+
+}
+
+#me-picture img{
+  border-radius: 13%;
+  float: right;
+  position: absolute;
+  width: 20%;
+  right: 12%;
+}
+
+
+#button1 img {
+  width: 30%;
+  margin: 20, 10, 10, 10;
+
+}
+.image-1{
+  border-radius: 10%;
+}
+
+
+/* NAVBAR section */
+.navbar-fixed-top {
+   height: 5%;
+   background-color: #3D3D3D;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+}
+
+.nav-pills {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: right;
+}
+
+
+.navbar-default li a{
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Anton", sans serif;
+  font-size: 20px;
+  background: #3D3D3D;
+  color: #C0E4FF;
+}
+
+
+.navbar-default li a:hover {
+    background: #3D3D3D;
+  color: #7DACF4;
+  text-decoration: underline;
+}
+
+.navbar-collapse {
+    background-color: #3D3D3D;
+    margin: 0;
+
+} 
+
+.container-fluid {
+  background-color: #3D3D3D;
+}
+
+
+/*projects section*/
+.projects-section h3{
+  font-family: "Anton", sans;
+  font-size: 5vw;
+}
+
+.projects-section img {
+  border-radius: 50%
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .navbar-fixed-top {
+    	display: block;
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar .in .nav li {
+   		display: block;
+   		float: none;
+   		width:100%;
+	}
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+
+    .gsc-container{
+        display:block;
+    }
+}
+
+}

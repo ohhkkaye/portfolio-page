@@ -1,0 +1,25 @@
+public EventDetail GetEvent(string event_id)
+        {
+            if (!Validation.IsValidAccountID(event_id))
+                throw new WebFaultException<string>(Validation.INVALID_TRAILID, System.Net.HttpStatusCode.BadRequest);
+
+           
+            using (RTC.DbProcs dbp = new RTC.DbProcs())
+            {
+                RTC.Event evt;
+                try
+                {
+                   evt = dbp.GetEvent(Convert.ToInt64(event_id)); //edit check DBPRocs to make sure it exists
+                   return new EventDetail(evt);
+                }
+                catch (OracleException ex)
+                {
+                    if (ex.Number == -20001 || ex.Number == 01403)
+                    {
+                        throw new WebFaultException<string>("Event not found", System.Net.HttpStatusCode.NotFound);
+                    }
+                }
+                
+            }
+            return new EventDetail();
+        }

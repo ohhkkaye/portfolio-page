@@ -1,0 +1,294 @@
+body {
+  background-color:#ce3635;
+  text-align: center;
+  color:#fff;
+  padding-top:10em;
+}
+
+* { color:#fff; text-decoration: none;}
+
+
+
+.name {
+  position: relative;
+  margin-top: 10%;
+  font-family: "Anton", serif;
+  text-align: center;
+}
+
+.name h1{
+  font-family: "Anton", serif;
+  font-color: white;
+  text-align: center;
+  font-size: 3vw;
+}
+.name h2{
+  font-family: "Fjalla One", serif;
+  font-size: 8vw;
+  color: #C0E4FF;
+  text-align: center;
+}
+
+.main-header {
+  /*background: -webkit-linear-gradient(#02477A, black); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(#02477A, black); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#02477A, black); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#02477A, black); /* Standard syntax */
+  background: #3D3D3D;
+  
+  background-image: no-repeat;
+  background-image: url('');
+  background-size: cover;
+  background: rgba(61, 61, 61, .5); 
+}
+
+.main-header::after {
+  content: "";
+  background: url('https://c1.staticflickr.com/9/8716/28663248381_569cd8ec2f_b.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+#subtitle {
+  margin-top: 0;
+  position: relative;
+}
+
+#subtitle span {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+
+#subtitle h3 {
+  font-family: "Vidaloka", cursive;
+  color: #C0E4FF;
+  font-size: 4vw;
+  display: inline;
+}
+
+
+.contact-section {
+  color: #4cb3ff;
+  font-family: "Anton", cursive;
+  background: #3D3D3D;
+}
+.contactme img{
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.contactme {
+  margin: 0 auto;
+}
+
+body {
+	font-family: "Arial", serif;
+	padding-top: 70px;
+  background: #3D3D3D;
+  height: 100%;
+  color: white;
+}
+
+
+#projects {
+  height: 100vh;
+  color: white;
+    background: #3D3D3D;
+}
+/*ABOUT ME section*/
+
+#me-title {
+  font-size: 4vw;
+  font-family: "Anton", cursive;
+  text-align: right;
+}
+
+#me-info {
+  font-family: "Fjalla One", serif;
+  font-size: 2vw;
+  border: 2px;
+  float: left;
+  text-align: right;
+  width: 40%;    
+}
+
+.me-section {
+    background:#3D3D3D;
+  width: 100%;
+  color: #C0E4FF;
+}
+
+.me-section h3 {
+  font-family: "Anton";
+  font-size: 5vw;
+  color: white;
+}
+
+#skills-pics img{
+  border-radius: 20%;
+  width: 15%;
+}
+
+#skills-pics {
+  float: right;
+  display: block;
+}
+
+#me-skills {
+  font-family: "Fjalla One", serif;
+  font-size: 2vw;
+  float: right;
+  text-align: left;
+  width: 55%;
+  right: 30%;
+
+}
+
+#me-picture img{
+  border-radius: 13%;
+  float: right;
+  position: absolute;
+  width: 20%;
+  right: 12%;
+}
+
+
+#button1 img {
+  width: 30%;
+  margin: 20, 10, 10, 10;
+
+}
+.image-1{
+  border-radius: 10%;
+}
+
+
+/* NAVBAR section */
+
+.navbar{ 
+background: transparent;
+   border-color: transparent;}
+.navbar-fixed-top {
+   height: 5%;
+   /*background-color: #3D3D3D;*/
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+}
+
+.nav-pills {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: right;
+}
+
+
+.navbar-default li a{
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "Anton", sans serif;
+  font-size: 20px;/*
+  background: #3D3D3D;*/
+  background-color: transparent;
+  background: transparent;
+   border-color: transparent;
+  color: #C0E4FF;
+}
+
+
+.navbar-default li a:hover {
+    background: #3D3D3D;
+  color: #7DACF4;
+  text-decoration: underline;
+}
+
+.navbar-collapse {/*
+    background-color: #3D3D3D;*/
+    background-color: transparent;
+    background: transparent;
+   border-color: transparent;
+    margin: 0;
+
+} 
+
+.container-fluid {
+  background-color: #3D3D3D;
+}
+
+
+/*projects section*/
+.projects-section h3{
+  font-family: "Anton", sans;
+  font-size: 5vw;
+}
+
+.projects-section img {
+  border-radius: 50%
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .navbar-fixed-top {
+    	display: block;
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar .in .nav li {
+   		display: block;
+   		float: none;
+   		width:100%;
+	}
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+}
